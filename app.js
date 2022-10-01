@@ -6,7 +6,7 @@ var logger = require("morgan");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var tutorialRouter = require('./routes/tutorials')
-const port = 3001;
+const port = process.env.PORT || 3001;
 var app = express();
 
 app.use(logger("dev"));
